@@ -1,0 +1,25 @@
+.footer {
+  background-color: #2f303a;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: baseline;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+  margin-top: 72px;
+
+  @include font(14px, 700, 1.14, 0.03em);
+
+  text-transform: uppercase;
+
+  color: var(--second-footer-color);
+}

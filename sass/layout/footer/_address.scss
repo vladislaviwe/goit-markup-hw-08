@@ -1,0 +1,20 @@
+.address-box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-right: 70px;
+}
+
+.address-list__item + .address-list__item {
+  margin-top: 9px;
+}
+
+.address-list__link {
+  @include font(14px, 400, 1.71, 0.03em);
+  font-style: normal;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-list__link--first {
+  color: #ffffff;
+}
