@@ -17,9 +17,9 @@
 
         <!-- Хедер -->
         
-        <!-- <header class="header">
+        <header class="header">
             <div class="header-section container">
-                <a lang="en" class="logo header__logo" href="/">
+                <a lang="en" class="logo logo--header" href="/">
                     <span class="logo--accent">Web</span>Studio
                 </a>
                 <nav class="header-navigation">
@@ -36,7 +36,7 @@
                     </ul>
                 </nav>
 
-                
+        <!-- Контакты -->
 
                     <ul class="contacts-list">
                         <li class="contacts__item">
@@ -59,7 +59,71 @@
                         </li>
                     </ul>
             </div>
-        </header> -->
+
+        <!-- Хедер для мобильного -->
+
+            <div class="mob-header container">
+                <div>
+                    <a lang="en" class="logo logo--header" href="/">
+                        <span class="logo--accent">Web</span>Studio
+                    </a>
+                </div>
+                <button type="button" class="menu-open__btn">
+                    <svg width="24" height="16">
+                        <use href="./images/icons.svg#icon-mob-menu"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="mob-menu is-hidden">
+                <div class="container">
+                    <div class="mob-menu--top">
+                        <button type="button" class="menu-close__btn">
+                            <svg width="24" height="16">
+                                <use href="./images/icons.svg#icon-close"></use>
+                            </svg>
+                        </button>
+                        <ul class="mobmenu-list">
+                            <li class="mobmenu-list__item">
+                                <a class="mobmenu-list__link mobmenu-list__link--current" href="./index.html">Студия</a>
+                            </li>
+                            <li class="mobmenu-list__item">
+                                <a class="mobmenu-list__link" href="./portfolio.html">Портфолио</a>
+                            </li>
+                            <li class="mobmenu-list__item">
+                                <a class="mobmenu-list__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mob-menu--bottom">
+                        <ul class="mob-contacts-list">
+                            <li class="mob-contacts__item">
+                                <a class="mob-contacts__tel" href="tel:+380961111111">
+                                    +38 096 111 11 11</a>
+                            </li>
+                            <li class="mob-contacts__item">
+                                <a class="mob-contacts__mail" href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                            </li>                           
+                        </ul>
+                        <ul class="mob-social-list">
+                            <li class="mob-social__item">
+                                <a class="mob-social__link" href="">Instagram</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="mob-social__link" href="">Twitter</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="mob-social__link" href="">Facebook</a>
+                            </li>
+                            <li class="mob-social__item">
+                                <a class="mob-social__link" href="">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
         <main>
 
             <!-- Герой -->
@@ -366,7 +430,7 @@
 
             <!-- Футер -->
 
-            <!-- <footer class="footer">
+            <footer class="footer">
                 <div class="container footer-container">
                     <div class="address-box">
                         <div>
@@ -384,7 +448,7 @@
                         </address>
                         </div>
                     </div>
-                    <div>
+                    <div class="social">
                         <p class="footer__text">Присоединяйтесь</p>
                         <ul class="social-list">
                             <li class="social-list__item">
@@ -429,7 +493,7 @@
                         </form>
                     </div>
                 </div>
-            </footer> -->
+            </footer>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button type="button" class="modal-close__btn" data-modal-close>
@@ -489,6 +553,7 @@
                 </div> 
             </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mob-menu.js"></script>
     </body>
 </html>
         

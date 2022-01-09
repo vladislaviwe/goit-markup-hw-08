@@ -22,7 +22,7 @@
     padding: 118px 204px;
   }
   @media screen and (min-width: 1200px) {
-    padding: 200px 452px;
+    padding: 200px 0;
   }
 }
 
@@ -39,6 +39,7 @@
 
   @media screen and (min-width: 1200px) {
     @include font(44px, 900, 1.36, 0.06em);
+    width: 696px;
   }
 }
 
